@@ -678,5 +678,15 @@ if(function_exists('acf_add_options_page') ) {
 }
 
 
+add_action( 'wp_footer', 'wpm_redirect_cf7' );
+function wpm_redirect_cf7() { ?>
+    <script type="text/javascript">
+    document.addEventListener('wpcf7mailsent', function(event) {
+        location = 'https://dwstaging.link/cms/lightstream/thank-you/';
+    }, false);
+    </script>
+<?php }
+
+
 
 

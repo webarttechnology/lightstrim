@@ -32,6 +32,8 @@
 
 <body <?php body_class(); ?>>
 
+
+
     <header class="top-header fixed-top">
         <div class="container">
             <div class="header-part">

@@ -9,8 +9,11 @@
  * @since Twenty Twenty-One 1.0
  */
 
-get_header('inner'); ?>
-<section class="trusted-company">
+get_header('inner');?>
+
+
+
+ <section class="trusted-company">
         <div class="trusted-company__bg" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/shapes/trust-bg-1-1.png);"></div>
         <!-- /.trusted-company__bg -->
         <div class="container">
@@ -39,5 +42,6 @@ get_header('inner'); ?>
         </div><!-- /.container -->
     </div>
     </section>
+
     <?php 
-  get_footer('inner');
+    get_footer('inner');
