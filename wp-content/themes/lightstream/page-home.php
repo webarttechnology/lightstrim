@@ -171,13 +171,30 @@ get_header();
         <div class="container">
             <h2> <?php  echo   CFS()->get('testimonial_section_title'); 
                          $altestimonials = CFS()->get('all_testimonials'); 
+                         $testimocount = 0;
                        
               ?></h2>
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <?php foreach($altestimonials as $eachtestimo){ ?>
+                    <?php
+      
+
+                     foreach($altestimonials as $eachtestimo){
+                        $testimocount++;
+                        if($testimocount==1){
+                      ?>
 
                     <div class="carousel-item active">
+                    <?php }
+                    else
+                    {
+                        ?>
+                         <div class="carousel-item">
+
+                   <?php  }
+
+
+                     ?>
                         <div class="carousel-caption">
                             <p><?php echo $eachtestimo['text'] ?></p>
                             <img src="<?php echo $eachtestimo['image']; ?>">
